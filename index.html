@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <main>
+      <div class="buttons">
+      <button class="button new-game"> <img src="./images/001-replay.png">  New game</button>
+      <button class="button roll-dice"> <img src="./images/002-dice.png"> Roll dice</button>
+      <button class="button hold"> <img src="./images/003-right-arrow.png">Hold</button>
+      </div>
+      <img class="image dice hidden" src="./images/dice-1.png">
+
+      <section class="left active">
+        <h1 class="heading-1">Player 1</h1>
+        <span class="total-score total-score-left">0</span>
+        <div class="current-score-box">
+          <p class="current">Current</p>
+          <span class="current-score-left">0</span>
+        </div>
+      </section>
+
+      <section class="right">
+        <h1 class="heading-1">Player 2</h1>
+        <span class="total-score total-score-right">0</span>
+        <div class="current-score-box">
+          <p class="current">Current</p>
+          <span class="current-score-right">0</span>
+        </div>
+      </section>
+
+    </main>
+
+    <div class="rules">
+      <ul>
+        <li>Player 1 goes first</li>
+        <li>Roll dice to gain points</li>
+        <li>If you roll 1, you lose your points and other Player gets to Roll again</li>
+        <li>Hold in order to add currrent points to the total points</li>
+        <li>If you gain total 50 points, you win</li>
+        <li>Have Fun 🎉</li>
+        <li>This is a simple JavaScript portfolio game programmed by 
+          <a target="_blank" href="https://www.linkedin.com/in/shamkhal-rzayev-99200010b/">Shamkhal Rzayev</a>
+      </li>
+
+      </ul>
+      <span class="button button-rules">rules</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
